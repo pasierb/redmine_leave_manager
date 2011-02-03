@@ -1,0 +1,10 @@
+= Redmine Leave Manager
+
+Under development. Absolutly NOT ready for use.
+
+== Story
+
+One day my boss came to me and said:
+"Michal, about your HolidayPlanner... it would be nice if I had
+something like this in Redmine. Employers could use Planner's interface for
+planning leave, and i would have admin panel for rejecting... i mean approving it."

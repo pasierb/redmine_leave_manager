@@ -1,0 +1,63 @@
+table.calendar {
+  width: 100%;
+}
+
+table.calendar thead td {
+  font-weight: bold;
+}
+
+table.calendar tr.day-of-week-names td {
+  font-size: 7px;
+  padding-top: 5px;
+}
+
+table.calendar div.day {
+  border: 1px solid #c3c3c3;
+  background: url('/images/day_back.png') 0 0 no-repeat;
+  width: 22px;
+  height: 13px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 11px;
+}
+
+table.calendar div.saturday {
+  background-image: url('/images/day_sunday.png');
+}
+
+table.calendar div.sunday {
+  background-image: url('/images/day_sunday.png');
+}
+
+table.calendar td.month-name {
+  width: 80px;
+}
+
+div.month-name-label {
+  font-weight: bold;
+}
+
+table.calendar div.saturday, table.calendar div.sunday{
+  background-color: #777;
+}
+
+table.calendar div.holiday {
+  background-color: #bc2e2e;
+  background-image: url('/images/day_holiday.png');
+}
+
+table.calendar div.period {
+  background-color: yellow;
+}
+
+table.calendar div.leave {
+  background-image: url('/images/day_free.png');
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+table.calendar td div {
+  width: 25px;
+}

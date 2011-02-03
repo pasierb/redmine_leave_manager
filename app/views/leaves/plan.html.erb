@@ -1,0 +1,20 @@
+<% content_for :header_tags do %>
+  <%= stylesheet_link_tag 'leave_manager', :plugin => 'redmine_leave_manager' %>
+  <%= javascript_include_tag 'leave_manager', :plugin => 'redmine_leave_manager' %>
+<% end %>
+
+<div class="calendar-wrapper">
+  <table class="calendar" cellspacing="0" cellpadding="0">
+    <tbody>
+      <% (1..12).each do |month| %>
+        <%= render :partial => "calendar_month", :locals => { :month => month, :public_holidays => @public_holidays } %>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<% javascript_tag do %>
+  <% @leaves.each do |leave| %>
+    markUpDay( $("<%=h leave.date.strftime %>") );
+  <% end %>
+<% end %>
